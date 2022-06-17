@@ -5,11 +5,13 @@ body{
 h2,h3{
     margin: 10px 0;
     text-align: center;
+    text-shadow: black 0px 2px 2px;
 }
 .container{
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
+    /* background-color: #474F42; */
     background-image: url('img/texture-1.jpg');
 }
 .sheet-container{
@@ -98,6 +100,11 @@ h2,h3{
     justify-content: space-between;
     display: flex;
 }
+.parameters-container .energias-container{
+    height: 70%;
+    display: flex;
+    align-items: center;
+}
 .pericia-container{
     width: 100%;
 }
@@ -105,15 +112,18 @@ h2,h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    max-height: 250px;
     gap: 5px;
 }
 .pericia-container form .pericia-data{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 25%;
+    width: 40%;
     min-width: 120px;
-    padding: 0 10px;
+    border-bottom: 1px solid black;
 }
 .pericia-container form .pericia-data .number-roll-area{
     display: flex;
@@ -130,7 +140,8 @@ h2,h3{
 section{
     background-color: rgba(0, 0, 0, 0.295);
     border: 1px solid black;
-    padding: 5px 0;
+    box-sizing: border-box;
+    padding: 5px;
     margin: 10px 0;
 }
 input[type=number], input[type=text]{
