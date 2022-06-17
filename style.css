@@ -105,6 +105,21 @@ h2,h3{
     display: flex;
     align-items: center;
 }
+.parameters-container .energias-container .energias-card{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.parameters-container .energias-container .energias-card .values{
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+}
+.parameters-container .energias-container .energias-card .values input{
+    width: 45%;
+    max-width: 100px;
+
+}
 .pericia-container{
     width: 100%;
 }
@@ -135,7 +150,6 @@ h2,h3{
 }
 .pericia-container form div input{
     width: 45px;
-    height: 1.2em;
 }
 section{
     background-color: rgba(0, 0, 0, 0.295);
@@ -149,4 +163,7 @@ input[type=number], input[type=text]{
     border: 1px solid black;
     border-radius: 5px;
     color: white;
+}
+input[type=number]{
+    height: 1.2em;
 }
