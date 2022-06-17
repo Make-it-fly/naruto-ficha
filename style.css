@@ -85,10 +85,12 @@ h2,h3{
 }
 .parameters-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .parameters-container form{
     width: 45%;
+    min-width: 235px;
 }
 .parameters-container .energias-container, .parameters-container .defesas-container{
     display: flex;
@@ -137,18 +139,17 @@ h2,h3{
     justify-content: space-between;
     align-items: center;
     width: 40%;
-    min-width: 120px;
     border-bottom: 1px solid black;
 }
 .pericia-container form .pericia-data .number-roll-area{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     gap: 2px;
     box-sizing: border-box;
     padding: 0;
 }
-.pericia-container form div input{
+.pericia-container form .pericia-data .number-roll-area input{
     width: 45px;
 }
 section{
@@ -168,3 +169,50 @@ input[type=number]{
     max-height: 20px;
     box-sizing: border-box;
 }
+@media screen and (max-width: 600px){
+    body{
+        margin: 0;
+    }
+    .container{
+        width: 100%;
+    }
+    .parameters-container form{
+        width: 100%;
+    }
+    .parameters-container .energias-card{
+        width: 100%;
+    }
+    .parameters-container .defesas-container div{
+        width: 100%;
+    }
+    .pericia-container form{
+        max-height: none;
+    }
+    .pericia-container form .pericia-data{
+        width: 100%;
+    }
+    .pericia-container form .pericia-data .number-roll-area{
+        max-width: 100px;
+        box-sizing: border-box;
+    }
+    .pericia-container form .pericia-data .number-roll-area input{
+        width: 50%;
+    }
+}
+
+/* teste */
+/* .sheet-container{
+    padding: 0 80px;
+}
+section{
+    background-color: #DAD28E;
+    color: black;
+}
+section::before{
+    position: absolute;
+    content: '';
+    background-color: red;
+    width: 50px;
+    height: 80px;
+    transform: translateX(-110%);
+} */
