@@ -1,0 +1,12 @@
+.roll-button{
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #32382F;
+    margin: 0;
+    cursor: pointer;
+}
+.roll-button:hover{
+    background-color: #879183;
+    color: rgb(46, 51, 43);
+}

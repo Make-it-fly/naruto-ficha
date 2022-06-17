@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9em;
+    color: white;
 }
 h2,h3{
     margin: 10px 0;
@@ -10,6 +10,7 @@ h2,h3{
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
+    background-image: url('img/texture-1.jpg');
 }
 .sheet-container{
     border: 1px solid black;
@@ -32,12 +33,18 @@ h2,h3{
     text-align: center;
     display: inline-block;
     border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.432);
+    box-shadow: .5px .5px 2px black;
     border-top: 0;
     border-radius: 5px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
     padding: 5px;
+    cursor: pointer;
 
+}
+.pages-container ul li:hover{
+    background-color: rgba(0, 0, 0, 0.726);
 }
 .description-container form{
     display: flex;
@@ -65,6 +72,7 @@ h2,h3{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 3px;
     width: 100px;
     flex-grow: 1;
     box-sizing: border-box;
@@ -99,7 +107,7 @@ h2,h3{
     justify-content: space-between;
     gap: 5px;
 }
-.pericia-container form div{
+.pericia-container form .pericia-data{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -107,11 +115,27 @@ h2,h3{
     min-width: 120px;
     padding: 0 10px;
 }
+.pericia-container form .pericia-data .number-roll-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    box-sizing: border-box;
+    padding: 0;
+}
 .pericia-container form div input{
     width: 45px;
     height: 1.2em;
 }
 section{
-    border-bottom: 1px solid black;
-    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.295);
+    border: 1px solid black;
+    padding: 5px 0;
+    margin: 10px 0;
+}
+input[type=number], input[type=text]{
+    background-color: #515C4C;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
 }
