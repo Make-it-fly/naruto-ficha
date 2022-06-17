@@ -173,8 +173,19 @@ input[type=number]{
     body{
         margin: 0;
     }
+    .pages-container{
+        position: fixed;
+        top: 0;
+    }
+    .pages-container ul li{
+        background-color: #394136;
+    }
+    .pages-container ul li:hover{
+        background-color: #232721;
+    }
     .container{
         width: 100%;
+        padding-top: 40px;
     }
     .parameters-container form{
         width: 100%;
