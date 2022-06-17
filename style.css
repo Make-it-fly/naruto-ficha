@@ -165,5 +165,6 @@ input[type=number], input[type=text]{
     color: white;
 }
 input[type=number]{
-    height: 1.2em;
+    max-height: 20px;
+    box-sizing: border-box;
 }
